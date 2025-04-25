@@ -1,0 +1,25 @@
+{
+    "enable_pre_bet_taunt": {
+        "type": "bool",
+        "default": true,
+        "description": "是否启用AI玩家下注前的“嘲讽”功能。"
+    },
+    "pre_bet_taunt_style_prompt": {
+        "type": "string",
+        "default": "简短、幽默且略带挑衅。可以根据聊天记录和游戏情况嘲讽对手或吹嘘自己的下注选择。",
+        "description": "AI生成“嘲讽”时遵循的风格指示（会加入到给LLM的提示词中）。",
+        "hint": "例如：'扮演一个自信满满的赌徒，嘲讽其他玩家的选择' 或 '用神秘的口吻暗示自己的必胜下注'"
+    },
+    "recent_chat_history_length": {
+        "type": "int",
+        "default": 10,
+        "description": "AI分析时考虑最近多少条群聊天记录。",
+        "hint": "设置过大可能导致Prompt过长或LLM处理变慢。"
+    },
+    "include_chat_in_bet_prompt": {
+        "type": "bool",
+        "default": true,
+        "description": "是否在请求AI做下注决策的Prompt中也包含聊天记录。",
+        "hint": "开启可能让AI决策更智能，但也可能增加Prompt长度和LLM成本。"
+    }
+}
